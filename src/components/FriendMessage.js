@@ -1,8 +1,8 @@
 import React from 'react';
-import Face from '../assets/face.png';
+import Face from '../assets/gorillaz.jpg';
 
 const FriendMessages = () => {
-
+    
     return(
         <div className="friend-messages">
             <img src={Face} alt="face"></img>

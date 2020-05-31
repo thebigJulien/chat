@@ -5,7 +5,18 @@ import MessageRoom from '../components/Message';
 
 class App extends React.Component {
 
-render(){
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: {
+        text: 'You look hot',
+        sender: true,
+        time: `6.66pm`
+      }
+    };
+  }
+
+  render(){
 
   return (
     <div className="App">

@@ -1,20 +1,27 @@
 import React from 'react';
 
-const Input = () => {
+class Input extends React.Component {
 
-    return(
-        <header className="input-room">
-            <div className="text-input">
-            <input className="input" type="text"></input>
-            <button>SEND</button>
-            </div>
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
 
-            <div className="characters">
-                <button className="you">YOU</button>
-                <button className="friend">YOUR FRIEND</button>
-            </div>
-        </header>
-    )
+    render() {
+        return(
+            <header className="input-room">
+                <form className="text-input">
+                <input className="input" type="text"></input>
+                <button>SEND</button>
+                </form>
+    
+                <div className="characters">
+                    <button className="you">YOU</button>
+                    <button className="friend">YOUR FRIEND</button>
+                </div>
+            </header>
+        )
+    } 
 };
 
 
